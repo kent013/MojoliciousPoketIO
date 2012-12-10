@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+  <head>
+	<meta charset="utf-8">
+	<title>Mojolicious and PocketIO</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+	<div id="app">
+      <p>Hi, <span class='name'><%= $name %></span>!</p>
+      <input id="name" name="name" type="text">
+      <button id="submit_name">Set Name</button>
+        
+      <input id="message" type="text">
+      <button id="submit_message">Echo</button>
+
+      <div id="messages">
+      </div>
+    </div>
+    <script src="/js/jquery-1.8.3.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script> 
+  </body>
+</html>
